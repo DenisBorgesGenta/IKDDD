@@ -1,0 +1,109 @@
+body {background-color: rgb(145, 170, 150);
+  transition-duration: 0.5s;}
+
+
+h1 {
+    display: block;
+    font-size: 3em;
+    margin-top: -0.2em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color:rgb(214, 245, 222)
+  }
+
+  h2 {
+    display: block;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    margin-top: -3.3em;
+    margin-left: 5.4em;
+    margin-right: 0;
+    font-weight: bold;
+    color:rgb(101, 122, 102)
+  }
+
+  #btn-relax-mode {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(183, 199, 183);
+    position: absolute;
+   margin-bottom: 0.3em;
+   margin-left: 80%;
+    color: rgb(79, 112, 93);
+    
+}
+
+.relax-mode{
+  background-color: rgb(38, 44, 41);
+  transition-duration: 0.5s;
+}
+
+
+.lineaProducto {font-size: 35px;
+}
+
+.card{display: flex; margin: auto;}
+
+.renderItemCarrito{
+  display: flex;
+}
+
+.itemCarrito1{
+  width: 50px;
+  height: 50px; 
+  background-color: red
+}
+
+.itemCarrito2{
+  width: 50px;
+  height: 50px; 
+  background-color: white
+}
+
+.itemCarrito3{
+  width: 50px;
+  height: 50px; 
+  background-color: red
+}
+
+#contenedorCarrito{
+  width: 50%;
+  display: grid;
+  grid-template-columns: 100px 250px auto auto;
+  column-gap: 0px;
+  background-color: pink;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+
+.itemCarrito {
+text-align: center;
+position: relative;
+padding-top: 35px;
+padding-left: 5px;
+font-size: 20px;
+background-color: lightgreen;
+transition: 200ms;
+
+
+}
+
+.itemCarrito:hover {
+background-color: darkgreen;
+transition: 200ms;
+  }
+
+  .swal2-popup {
+    font-size: 15px !important;
+    font-family: Georgia, serif;
+    text-align: left;
+    border-radius: 5px;
+  }
+
+  .elboton {
+    background-color: red;
+  }

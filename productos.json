@@ -1,0 +1,37 @@
+[
+{"id": 0,
+"nombre": "HYALU B5 SERUM",
+"precio": 75.00,
+"moneda": "USD",
+"contenido": "150ml",
+"beneficios": "Mejora el proceso de reparación de la piel.",
+"recomendaciones": "Se recomienda su uso en tipos de piel sensible.",
+"img": "./img/pleasing.jpeg",
+"unidades": 1
+},
+
+{"id": 1,
+"nombre": "HYALU B5 OJOS",
+"precio": 87.00,
+"moneda": "USD",
+"contenido": "200ml.",
+"beneficios": "Repara y rellena la barrera de la piel del contorno de ojos.",
+"recomendaciones": "Repara y rellena la barrera de la piel del contorno de ojos.",
+"img": "./img/pleasing.jpeg",
+"unidades": 1
+},
+
+{"id": 3,
+"nombre": "HYALU B5 OJOS",
+"precio": 55.00,
+"moneda": "USD",
+"contenido": "250ml.",
+"beneficios": "Reduce las arrugas. Rellena la piel aportando volumen y elasticidad.",
+"recomendaciones": "Se recomienda su uso en tipos de piel seca.",
+"img": "./img/pleasing.jpeg",
+"unidades": 1
+}
+]
+
+
+
