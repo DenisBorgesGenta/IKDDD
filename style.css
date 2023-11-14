@@ -1,6 +1,5 @@
-body {background-color: rgb(145, 170, 150);
+body {background-color: #91AA96;
   transition-duration: 0.5s;}
-
 
 h1 {
     display: block;
@@ -23,23 +22,6 @@ h1 {
     font-weight: bold;
     color:rgb(101, 122, 102)
   }
-
-  #btn-relax-mode {
-    width: 200px;
-    height: 50px;
-    background-color: rgb(183, 199, 183);
-    position: absolute;
-   margin-bottom: 0.3em;
-   margin-left: 80%;
-    color: rgb(79, 112, 93);
-    
-}
-
-.relax-mode{
-  background-color: rgb(38, 44, 41);
-  transition-duration: 0.5s;
-}
-
 
 .lineaProducto {font-size: 35px;
 }
@@ -73,7 +55,6 @@ h1 {
   display: grid;
   grid-template-columns: 100px 250px auto auto;
   column-gap: 0px;
-  background-color: pink;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;  
@@ -86,14 +67,14 @@ position: relative;
 padding-top: 35px;
 padding-left: 5px;
 font-size: 20px;
-background-color: lightgreen;
+background-color: #A2C9A9;
 transition: 200ms;
 
 
 }
 
 .itemCarrito:hover {
-background-color: darkgreen;
+background-color: #6F9777;
 transition: 200ms;
   }
 
@@ -104,8 +85,20 @@ transition: 200ms;
     border-radius: 5px;
   }
 
-  .elboton {
-    background-color: red;
-  }
+ .btnstyling{
+  width: 200px;
+  background-color: #637767;
+  color: white;
+  padding: 5px;
+  margin: 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+}
 
-  .visible {display: none}
+.btnstyling:hover, a:active {
+  background-color: #354739;
+}
+
+  .invisible {display: none;}

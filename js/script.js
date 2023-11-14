@@ -26,7 +26,7 @@ const llamarInventario = async () => {
            <p class="card-text" style = "text-align: left">${item.contenido}</p>
            <p class="card-text" style = "text-align: left">${item.beneficios}</p>
            <p class="card-text" style = "text-align: left">${item.recomendaciones}</p>
-           <button id="${item.id}" class="btnHidden">Agregar al carrito.</button>
+           <button id="${item.id}" class="btnstyling">Agregar al carrito.</div>
          </div>
        </div>`
       contenedorInventario.appendChild(card)
@@ -81,6 +81,7 @@ llamarInventario()
       <div class="itemCarrito">${item.precio} ${item.moneda}</div>`
     })
     imprimirTotalCarrito()
+    proseguirACompra()
     
   }
 
@@ -112,8 +113,14 @@ function guardarEnStorage(){
   imprimirItemsCarrito()
   }
 
+  function proseguirACompra (){
+    const btnproseguir = document.getElementById("btn-proseguir")
+    btnproseguir.innerHTML=`<a href="../redirecting.html"><button class="btnstyling">PROCEDER A COMPRA.</button></a>`
+    if(carrito.length === 0){
+      btnproseguir.classList.add("invisible")
+    }else{btnproseguir.classList.remove("invisible")}
+
+    }
     
-
-
  
  
