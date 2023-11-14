@@ -5,9 +5,12 @@ const contenedorInventario = document.getElementById("contenedorInventario")
 const contenedorCarrito = document.getElementById("contenedorCarrito")
 const contenedorTotalCarrito = document.getElementById("totalCarrito")
 
+function guardarEnStorage(){
+  localStorage.setItem("CART", JSON.stringify(carrito))
+  imprimirItemsCarrito()
+  }
 
-
-let carrito = JSON.parse(localStorage.getItem("KURT")) || []
+let carrito = JSON.parse(localStorage.getItem("CART")) || []
 guardarEnStorage()
 
 const llamarInventario = async () => {
@@ -16,13 +19,13 @@ const llamarInventario = async () => {
   imprimirInventario(items)}
 
   function imprimirInventario(productos){
-    
     productos.forEach((item) =>{
       let card = document.createElement("column")
       card.innerHTML = `<div class="card" style="width: 18rem; display: inline-block; margin: auto; ">
          <img src="${item.img}" class="card-img-top" alt="...">
          <div class="card-body">
            <h5 class="card-title">${item.nombre}</h5>
+           <p class="card-text" style = "text-align: left">${item.precio} USD</p>
            <p class="card-text" style = "text-align: left">${item.contenido}</p>
            <p class="card-text" style = "text-align: left">${item.beneficios}</p>
            <p class="card-text" style = "text-align: left">${item.recomendaciones}</p>
@@ -64,8 +67,7 @@ llamarInventario()
   }else{
   const artSeleccionado = productos.find((item) => item.id===id)
   carrito.push(artSeleccionado)
-  }
-   
+  }  
   guardarEnStorage()
   imprimirItemsCarrito()
   imprimirTotalCarrito()
@@ -77,13 +79,12 @@ llamarInventario()
       contenedorCarrito.innerHTML+=`
       <img src="${item.img}" height="100px" alt="..."></div>
       <div class="itemCarrito">${item.nombre}</div>
-      <div class="itemCarrito">${item.unidades} unidades</div>
+      <div class="itemCarrito">Unidades: ${item.unidades}</div>
       <div class="itemCarrito">${item.precio} ${item.moneda}</div>`
     })
     imprimirTotalCarrito()
     proseguirACompra()
-    
-  }
+    }
 
 function imprimirTotalCarrito(){
   let precioTotal = 0
@@ -97,21 +98,17 @@ function imprimirTotalCarrito(){
 
 imprimirTotalCarrito()
 
-
 function vaciarCarrito(){
   const btnVaciarCarrito = document.getElementById("btn-vaciar-carrito")
+  btnVaciarCarrito.innerHTML="VACIAR CARRITO"
   btnVaciarCarrito.addEventListener("click", ()=> {
-  localStorage.removeItem("KURT")
+  localStorage.removeItem("CART")
   carrito = []
   imprimirItemsCarrito()}
   )}
 
   vaciarCarrito()
 
-function guardarEnStorage(){
-  localStorage.setItem("KURT", JSON.stringify(carrito))
-  imprimirItemsCarrito()
-  }
 
   function proseguirACompra (){
     const btnproseguir = document.getElementById("btn-proseguir")
@@ -119,8 +116,7 @@ function guardarEnStorage(){
     if(carrito.length === 0){
       btnproseguir.classList.add("invisible")
     }else{btnproseguir.classList.remove("invisible")}
-
-    }
+  }
     
  
  
