@@ -107,3 +107,5 @@ transition: 200ms;
   .elboton {
     background-color: red;
   }
+
+  .visible {display: none}

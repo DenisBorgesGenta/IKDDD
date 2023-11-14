@@ -82,10 +82,6 @@ llamarInventario()
     
   }
 
-
-
-console.log(carrito) 
-
 function imprimirTotalCarrito(){
   let precioTotal = 0
   contenedorTotalCarrito.innerHTML = ""
@@ -108,8 +104,6 @@ function vaciarCarrito(){
   )}
 
   vaciarCarrito()
-
-
 
 function guardarEnStorage(){
   localStorage.setItem("KURT", JSON.stringify(carrito))
