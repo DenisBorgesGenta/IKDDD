@@ -23,7 +23,9 @@ const llamarInventario = async () => {
          <img src="${item.img}" class="card-img-top" alt="...">
          <div class="card-body">
            <h5 class="card-title">${item.nombre}</h5>
-           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           <p class="card-text" style = "text-align: left">${item.contenido}</p>
+           <p class="card-text" style = "text-align: left">${item.beneficios}</p>
+           <p class="card-text" style = "text-align: left">${item.recomendaciones}</p>
            <button id="${item.id}" class="btnHidden">Agregar al carrito.</button>
          </div>
        </div>`
@@ -74,7 +76,7 @@ llamarInventario()
     carrito.forEach((item) => {
       contenedorCarrito.innerHTML+=`
       <img src="${item.img}" height="100px" alt="..."></div>
-      <div class="itemCarrito">aHYALU B5 SERUM</div>
+      <div class="itemCarrito">${item.nombre}</div>
       <div class="itemCarrito">${item.unidades} unidades</div>
       <div class="itemCarrito">${item.precio} ${item.moneda}</div>`
     })

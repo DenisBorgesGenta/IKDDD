@@ -1,6 +1,6 @@
 [
 {"id": 0,
-"nombre": "HYALU B5 SERUM",
+"nombre": "HALO B5 SERUM",
 "precio": 75.00,
 "moneda": "USD",
 "contenido": "150ml",
@@ -11,7 +11,7 @@
 },
 
 {"id": 1,
-"nombre": "HYALU B5 OJOS",
+"nombre": "HALO B5 EYES",
 "precio": 87.00,
 "moneda": "USD",
 "contenido": "200ml.",
@@ -22,7 +22,7 @@
 },
 
 {"id": 3,
-"nombre": "HYALU B5 OJOS",
+"nombre": "HYALU B5 SKIN",
 "precio": 55.00,
 "moneda": "USD",
 "contenido": "250ml.",
